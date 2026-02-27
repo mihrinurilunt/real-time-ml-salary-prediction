@@ -34,21 +34,6 @@ Dataset → Kafka Producer → Kafka Topic → Spark Streaming → ML Inference 
 
 ---
 
-## Machine Learning Model
-
-* Model: Random Forest Regressor
-* Framework: Scikit-learn
-* Features:
-
-  * Encoded Position
-  * Experience Level
-* Train-test split: 80/20
-* Model and encoder serialized using joblib
-
-The trained model is loaded into Spark and applied to streaming records using a PySpark UDF for real-time inference.
-
----
-
 ## Technologies Used
 
 * Python
